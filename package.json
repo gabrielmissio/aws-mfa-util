@@ -18,13 +18,14 @@
   "devDependencies": {
     "eslint": "^8.43.0",
     "eslint-config-standard": "^17.1.0",
-    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-n": "^16.0.0",
     "eslint-plugin-promise": "^6.1.1",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2"
   },
   "dependencies": {
+    "@aws-sdk/client-sts": "^3.358.0",
     "ini": "^4.1.1"
   }
 }
