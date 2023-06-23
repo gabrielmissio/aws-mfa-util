@@ -1,12 +1,19 @@
 {
   "name": "@missio/aws-mfa-util",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.0-beta.1",
+  "description": "AWS MFA Util",
+  "private": false,
   "main": "src/index.js",
+  "bin": {
+    "aws-mfa": "src/index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "npx eslint",
-    "prepare": "husky install"
+    "lint": "npx eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielmissio/aws-mfa-util.git"
   },
   "keywords": [
     "AWS",
