@@ -8,8 +8,13 @@ const credentials = ini.parse(fs.readFileSync(options.credentialsFilePath, 'utf8
 
 async function main () {
   const profile = credentials[options.sourceProfile]
+
   if (!profile) {
     throw new Error(`Profile ${options.sourceProfile} not found`)
+  }
+
+  if (!profile.mfa_serial) {
+    throw new Error(`Profile ${options.sourceProfile} does not have mfa_serial`)
   }
 
   const stsClient = new STSClient({
@@ -67,8 +72,4 @@ function parseArguments (args) {
   return options
 }
 
-main()
-  .catch((err) => {
-    console.error(err)
-    process.exit(1)
-  })
+main().catch((err) => console.error(err))
