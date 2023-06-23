@@ -37,8 +37,8 @@ export AWS_PROFILE=mfa
 ## Command line options
 
 | Flag     | Description        | Default              |
-|:--------|:-----------------:|:---------------------|
-| **-c**   | MFA code           | _                    |
+|:---------|:------------------:|:---------------------|
+| **-c**   | MFA code           |                      |
 | **-s**   | Source profile     | `default`            |
 | **-o**   | Output profile     | `mfa`                |
 | **-f**   | Credentials dir    | `~/.aws/credentials` |
