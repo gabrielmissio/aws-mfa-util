@@ -55,7 +55,7 @@ function parseArguments (args) {
     mfaCode: null,
     sourceProfile: 'default',
     outputProfile: 'mfa',
-    credentialsFilePath: `${process.env.HOME}/.aws/credentials`
+    credentialsFilePath: `${require('os').homedir()}/.aws/credentials`
   }
 
   for (let i = 0; i < args.length; i++) {

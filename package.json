@@ -1,6 +1,6 @@
 {
   "name": "@missio/aws-mfa-util",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "description": "AWS MFA Util",
   "main": "src/index.js",
   "bin": {

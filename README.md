@@ -1,5 +1,7 @@
 # AWS MFA Util
 
+Simple utility to generate temporary AWS credentials using MFA.
+
 ## Installation
 
 ### From npm (recommended)
@@ -14,9 +16,7 @@ npm install -g @missio/aws-mfa-util
 
 ## Usage
 
-Given the configuration file above you can use your MFA to generate a code, e.g. `123456`, and generate credentials in the target section:
-
-Defautl profile:
+Default profile:
 
 ```bash
 aws-mfa -c 123456
@@ -33,3 +33,12 @@ Now AWS CLI commands as well as AWS API based programs can use the credentials b
 ```bash
 export AWS_PROFILE=mfa
 ```
+
+## Command line options
+
+| Flag     | Description        | Default              |
+|:---------|:------------------:|:---------------------|
+| **-c**   | MFA code           |                      |
+| **-s**   | Source profile     | `default`            |
+| **-o**   | Output profile     | `mfa`                |
+| **-f**   | Credentials dir    | `~/.aws/credentials` |
