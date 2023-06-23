@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const fs = require('fs')
 const ini = require('ini')
 const { STSClient, GetSessionTokenCommand } = require('@aws-sdk/client-sts')
